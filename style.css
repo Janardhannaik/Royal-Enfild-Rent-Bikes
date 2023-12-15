@@ -1,0 +1,1397 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	align-items: center;
+	
+	
+}
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	margin-top: 20px;
+	background-image: url(Picsart_23-10-28_14-19-54-743.jpg);
+	background-size: contain;
+	background-position: center;
+	padding-left: 5%;
+	padding-right: 10%;
+	background-repeat: no-repeat;
+	}
+nav{
+	width: 110%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav .logo{
+	width: 180px;
+	cursor: pointer;
+	
+	}
+nav .btn{
+	font-size: 20px;
+	border-bottom: 30%;
+	text-decoration: none;
+	color: #fff;
+	background: #333;
+	padding: 15px 50px;
+	border-radius: 30px;
+}
+.content{
+	margin-top: 10%;
+}
+.content h2{
+	color:#F56545;
+	font-size: 35px;
+}
+.content h1{
+	font-size: 120px;
+	color: #222;
+	margin-top: -20px;
+	font-family: Copperplate;
+
+}
+
+ 
+.content p{
+	max-width: 380px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+}
+.content h3{
+	margin-top: 30px;
+	font-weight: 600;
+	font-size: 24px;
+}
+.colour div{
+	background: #333;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.colour{
+	display: flex;
+	margin-top: 30px;
+}
+.colour #red{
+	background: halycngrey;
+}
+.colour #red{
+	background: red;
+}
+.colour #black{
+	background: black;
+}
+.cnt{
+	height: 50%;
+	position: absolute;
+	top: 750px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.cnt h1{
+	color: black;
+	font-size: 34px;
+	margin-bottom: 40px;
+	font-family: Stencilia;
+}
+.button{
+	background: #fff;
+	padding: 10px 15px;
+	color: #34495e;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 5px;
+	box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+	margin-top: 25px;
+	text-decoration: none;
+	transition: 0.4s;
+
+}
+.button:hover{
+	background: #34495e;
+	color: #fff;
+
+}
+/*animation card*/
+.mainflip{
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  padding-left: 0px;
+  margin-top: 50px;
+  border-radius: 30px;
+  float: none;
+  margin: 50 auto;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+
+  background-color: #C9D0D2;
+  color: black;
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-back h1{
+	padding-top: 39px;
+	font-family: Marker Felt;
+}
+
+.flip-card-back p{
+	font-size: 10px;
+}
+
+.h111{
+	padding-bottom: 100px;
+}
+
+
+
+
+
+
+/*ribbon*/
+
+.ribbon {
+  width: 400px;
+  height: 60px;
+  margin: 100px auto 0px;
+  position: relative;
+  color: #fff;
+  font: 28px/60px sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background: #3D79D0;
+  
+  -webkit-animation: main 250ms;
+  -moz-animation: main 250ms;
+  -ms-animation: main 250ms;
+  animation: main 250ms;
+}
+
+.ribbon i {
+  position: absolute;
+}
+
+.ribbon i:first-child, .ribbon i:nth-child(2) {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  z-index: -1;
+  border: 20px solid transparent;
+  border-right-color: #043140;
+  
+  
+}
+
+.ribbon i:nth-child(2) {
+  left: auto;
+  right: -20px;
+  border-right-color: transparent;
+  border-left-color: #043140;
+}
+
+.ribbon i:nth-child(3), .ribbon i:last-child {
+  width: 20px;
+  bottom: -20px;
+  left: -60px;
+  z-index: -2;
+  border: 30px solid #1D53C0;
+  border-left-color: transparent;
+  
+  
+}
+
+.ribbon i:last-child {
+  bottom: -20px;
+  left: auto;
+  right: -60px;
+  border: 30px solid #1D53C0;
+  border-right-color: transparent;
+
+}
+/*Animation card*/
+
+.flip-card1 {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 2000px;
+  margin-left: 120px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 30px;
+
+  
+ 
+}
+
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front1 {
+  background-color: #bbb;
+  color: black;
+
+}
+
+.flip-card-back1 {
+  background-color: #C9D0D2;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+
+
+.flip-card2 {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 2000px;
+  margin: 10 auto;
+ 
+  border-radius: 30px;
+  
+  margin-top: 50px;
+ 
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front2 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back2 {
+  background-color: #C9D0D2;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-back2 h1{
+	padding-top: 39px;
+	font-family: Marker Felt;
+}
+
+
+.flip-card-back2 p{
+	font-size: 10px;
+}
+.flip-card-back1 h1{
+	padding-top: 39px;
+	font-family: Marker Felt;
+}
+
+
+.flip-card-back1 p{
+	font-size: 10px;
+}
+
+
+
+.main {
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 100px;
+
+
+}
+
+.web {
+  font-size: 50px;
+  word-break: break-all;
+  background-color: #B6B6B4;
+  text-align: center;
+  font-family: Copperplate;
+  letter-spacing: 10px;
+}
+.p33{
+	background-color: #B6B6B4;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content2 {
+  background-color: white;
+ 	padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .column2 {
+    width: 100%;
+  }
+
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+
+.rotate-hover{
+	transition: box-shadow .3s;
+}
+.rotate-hover:hover {
+
+     transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+ 
+    
+
+}
+
+.p1 {
+	max-width: 380px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+
+}
+
+.p4 {
+	max-width: 380px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+
+}
+
+.p3 {
+	max-width: 380px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+
+}
+
+.p2 {
+	max-width: 380px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+
+}
+.content2 p{
+	width: 100%;
+	font-weight: 500;
+	font-size: 14px;
+	color: #555;
+
+
+}
+
+
+
+
+.hover1{
+	transition: box-shadow .3s;
+}
+.hover1:hover {
+
+     transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+ 
+    
+
+}
+.hover2{
+	transition: box-shadow .3s;
+}
+.hover2:hover {
+
+     transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+ 
+    
+
+}
+.hover3{
+	transition: box-shadow .3s;
+}
+.hover3:hover {
+
+     transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+ 
+    
+
+}
+
+
+.icon-main{
+	
+	width: 100%;
+	height: 50vh;
+	display: flex;
+}
+
+.icon{
+	padding-left: 100px;
+	
+}
+
+.img1{
+	height: 100px;
+	width:100px;
+
+}
+.star{
+	 width:500px;
+    margin: 0 auto;
+   
+    text-align: center;
+    padding-top: 50px;
+}
+.pp1{
+	font-size: 30px;
+}
+.service{
+	height: 100px;
+	width: 100px;
+
+}
+.icon2{
+	padding-left: 230px;
+	
+	
+	
+
+}
+.pp2{
+	font-size: 30px;
+	padding-top: 15px;
+}
+.icon3{
+	padding-left: 230px;
+	
+	
+	
+	
+}
+.service1{
+	height: 100px;
+	width: 100px;
+
+}
+	
+
+.service1{
+	height: 100px;
+	width: 100px;
+
+}
+.pp3{
+	font-size: 30px;
+	padding-top: 15px;
+}
+
+.service2{
+	height: 100px;
+	width: 100px;
+
+}
+.icon4{
+	padding-left: 230px;
+	
+}
+.pp4{
+	font-size: 30px;
+	padding-top: 15px;
+}
+
+
+
+
+
+
+
+.achive{
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: Serif;
+	
+
+    
+  position: relative;
+  color: #87CEEB;
+  
+}
+
+.achive:hover {
+  color: #000;
+}
+
+.achive::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.achive:hover::before {
+  transform: scaleX(1);
+}
+
+.last22{
+	width: 100%;
+	height: 50vh;
+	background-image: url('hjn.jpg');
+	background-size: cover;
+	opacity: 1.5;
+	
+	
+	
+}
+
+.last23{
+	width: 100%;
+	height: 50vh;
+	background-image: url('C350-DESKTOP-1536x576.jpg');
+	background-size: cover;
+	
+	
+
+}
+
+.last24{
+	width: 100%;
+	height: 50vh;
+	background-image: url('mavbul.jpg');
+	background-size: cover;
+	
+	
+
+}
+
+.last25{
+	width: 100%;
+	height: 50vh;
+	background-image: url('Royal-Enfield-Classic-350-Front-Right-View.webp');
+	background-size: cover;
+	
+	
+
+}
+.last26{
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.last26 a{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: #f5f6fa;
+	text-align: center;
+	margin: 10px;
+	line-height: 110px;
+	box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.last26 a i{
+	font-size: 30px;
+	transition: all 0.3s linear;
+}
+
+
+
+.last26 a:hover i{
+	transform: scale(1.4);
+}
+.fa-instagram{
+	color: #e84393;
+}
+.fa-youtube{
+	color: #e84118;
+}
+.center{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 50px;
+	font-family: serif;
+}
+.footer{
+	text-align: center;
+	padding-bottom: 50px;
+
+}
+
+
+
+
+
+
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    left: 1000px;
+}
+.fa-whatsapp{
+	padding-top: 13px;
+
+}
+
+
+
+
+
+
+/*media query*/
+@media  screen and (min-width: 100px) and (max-width: 319px) {
+	nav .logo {
+		width: 80px;
+		
+	}
+	nav .btn {
+		font-size: 10px;
+		border-bottom: 30%;
+		padding: 5px 30px;
+		
+	}
+	.content h2 {
+			font-size: 20px;
+	}
+	.content h1 {
+		font-size: 60px;
+		margin-top: -20px;
+		}
+		.content p {
+			max-width: 280px;
+			font-weight: 500;
+			font-size: 9px;
+			}
+	.content h3 {
+		margin-top: 120px;
+		font-weight: 600;
+		font-size: 15px;
+		}
+		.colour div {
+			width: 30px;
+			height: 30px;
+			}
+			.cnt {
+				height: 25%;
+				top: 650px;
+			}
+			.cnt h1 {
+				font-size: 20px;
+			}
+
+	
+
+
+
+.ribbon {
+    width: 200px;
+	bottom: 20px;
+    }
+.mainflip {
+		top: 80px;
+		
+		display: block;
+		
+	
+	}
+	.flip-card {
+		/*padding-top: 70px;
+		margin: 0 auto;
+		padding-left: 1px;*/
+		margin: 0 auto;
+	}
+	
+	.flip-card1 {
+		padding-top: 20px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}
+	.flip-card2 {
+		padding-top: 40px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}					
+	.web {
+		font-size: 18px;
+		letter-spacing: none;
+	}	
+	.achive {
+		font-size: 18px;
+	}
+	.achive::before {
+		width: 100%;
+		
+	}
+	.icon {
+		padding-left: 10px;
+	}	
+	.img1 {
+		height: 35px;
+		width: 35px;
+		margin-top: 25px;
+	}
+	.pp1 {
+		font-size: 10px;
+		padding-top: 15px;
+	}
+	.cc1{
+		font-size: 10px;
+	}
+	.icon2 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service	{
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp2 {
+		font-size: 10px;
+		
+	}
+	.cc2 {
+		font-size: 10px;
+		
+	}
+	.icon3 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service1 {
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp3 {
+		font-size: 10px;
+		
+	}
+	.cc3 {
+		font-size: 10px;
+		
+	}
+	.icon4 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service2 {
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp4 {
+		font-size: 10px;
+		
+	}
+	.cc4 {
+		font-size: 10px;
+		
+	}
+	.whats-app {	
+		left: 100px;
+	}
+}	
+
+
+
+
+
+
+
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+	nav .logo {
+		width: 80px;
+		
+	}
+	nav .btn {
+		font-size: 10px;
+		border-bottom: 30%;
+		padding: 5px 30px;
+		
+	}
+
+
+	.content h2 {
+			font-size: 20px;
+	}
+	.content h1 {
+		font-size: 60px;
+		margin-top: -20px;
+		}
+		.content p {
+			max-width: 280px;
+			font-weight: 500;
+			font-size: 9px;
+			}
+	.content h3 {
+		margin-top: 120px;
+		font-weight: 600;
+		font-size: 15px;
+		}
+		.colour div {
+			width: 30px;
+			height: 30px;
+			}
+			.cnt {
+				height: 25%;
+				top: 650px;
+			}
+			.cnt h1 {
+				font-size: 20px;
+			}
+
+					
+		
+.ribbon {
+    width: 200px;
+	bottom: 20px;
+    }
+.mainflip {
+		top: 80px;
+		
+		display: block;
+		
+	
+	}
+	.flip-card {
+		/*padding-top: 70px;
+		margin: 0 auto;
+		padding-left: 1px;*/
+		margin: 0 auto;
+	}
+	
+	.flip-card1 {
+		padding-top: 20px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}
+	.flip-card2 {
+		padding-top: 40px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}					
+	.web {
+		font-size: 18px;
+		letter-spacing: none;
+	}	
+	.achive {
+		font-size: 18px;
+	}
+	.achive::before {
+		width: 100%;
+		
+	}
+	.icon {
+		padding-left: 10px;
+	}	
+	.img1 {
+		height: 35px;
+		width: 35px;
+		margin-top: 25px;
+	}
+	.pp1 {
+		font-size: 10px;
+		padding-top: 15px;
+	}
+	.cc1{
+		font-size: 10px;
+	}
+	.icon2 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service	{
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp2 {
+		font-size: 10px;
+		
+	}
+	.cc2 {
+		font-size: 10px;
+		
+	}
+	.icon3 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service1 {
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp3 {
+		font-size: 10px;
+		
+	}
+	.cc3 {
+		font-size: 10px;
+		
+	}
+	.icon4 {
+		padding-left: 50px;
+		
+	}	
+	
+	.service2 {
+		height: 35px;
+		width: 35px;
+		margin-top: 50px;
+	}
+	.pp4 {
+		font-size: 10px;
+		
+	}
+	.cc4 {
+		font-size: 10px;
+		
+	}
+	.whats-app {	
+		left: 100px;
+	}
+}	
+				
+@media  screen and (min-width: 481px) and (max-width: 768px){
+	nav .logo {
+		width: 100px;
+		
+	}
+	nav .btn {
+		font-size: 15px;
+		border-bottom: 30%;
+		padding: 8px 35px;
+		
+	}
+	.content h2 {
+			font-size: 25px;
+	}
+	.content h1 {
+		font-size: 70px;
+		margin-top: -20px;
+		}
+		.content p {
+			max-width: 280px;
+			font-weight: 500;
+			font-size: 12px;
+			}
+	.content h3 {
+		margin-top: 120px;
+		font-weight: 600;
+		font-size: 18px;
+		}
+		.colour div {
+			width: 40px;
+			height: 40px;
+			}
+			.cnt {
+				height: 90%;
+				
+			}
+			.cnt h1 {
+				font-size: 20px;
+			}
+
+		
+.ribbon {
+    width: 350px;
+	bottom: 20px;
+    }
+.mainflip {
+		top: 80px;
+		display: block;
+	}
+	.flip-card {
+		margin: 0 auto;
+	}
+	
+	.flip-card1 {
+		padding-top: 20px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}
+	.flip-card2 {
+		padding-top: 40px;
+		margin: 0 auto;
+		padding-right: 1px;
+	}					
+	.web {
+		font-size: 18px;
+		letter-spacing: none;
+	}	
+	.achive {
+		font-size: 18px;
+	}
+	.achive::before {
+		width: 100%;
+		
+	}
+	.icon {
+		padding-left: 20px;
+	}	
+	.img1 {
+		height: 55px;
+		width: 55px;
+		margin-top: 25px;
+	}
+	.pp1 {
+		font-size: 15px;
+		padding-top: 15px;
+	}
+	.cc1{
+		font-size: 10px;
+	}
+	.icon2 {
+		padding-left: 130px;
+		
+	}	
+	
+	.service	{
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp2 {
+		font-size: 15px;
+		
+	}
+	.cc2 {
+		font-size: 10px;
+		
+	}
+	.icon3 {
+		padding-left: 130px;
+		
+	}	
+	
+	.service1 {
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp3 {
+		font-size: 15px;
+		
+	}
+	.cc3 {
+		font-size: 10px;
+		
+	}
+	.icon4 {
+		padding-left: 130px;
+		
+	}	
+	
+	.service2 {
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp4 {
+		font-size: 10px;
+		
+	}
+	.cc4 {
+		font-size: 10px;
+		
+	}
+	.whats-app {	
+		left: 100px;
+	}
+
+}					
+@media  screen and (min-width: 769px) and (max-width: 1024px){
+	nav .logo {
+		width: 150px;
+		
+	}
+	nav .btn {
+		font-size: 15px;
+		border-bottom: 30%;
+		padding: 8px 35px;
+		
+	}
+	.content h2 {
+			font-size: 35px;
+	}
+	.content h1 {
+		font-size: 90px;
+		margin-top: -20px;
+		}
+		.content p {
+			max-width: 280px;
+			font-weight: 500;
+			font-size: 15px;
+			}
+	.content h3 {
+		margin-top: 120px;
+		font-weight: 600;
+		font-size: 18px;
+		}
+		.colour div {
+			width: 40px;
+			height: 40px;
+			}
+			.cnt {
+				height: 25%;
+				top: 650px;
+			}
+			.cnt h1 {
+				font-size: 20px;
+			}
+
+		
+.ribbon {
+    width: 400px;
+	bottom: 20px;
+    }
+	.mainflip {
+		top: 80px;
+		
+		display: block;
+		
+	
+	}
+	.flip-card {
+		
+		margin: 0 auto;
+		
+	}
+	
+	.flip-card1 {
+		padding-top: 20px;
+		margin: 0 auto;
+		padding-left: 1px;
+	}
+	.flip-card2 {
+		padding-top: 40px;
+		margin: 0 auto;
+		padding-right: 1px;
+	}				
+	.web {
+		font-size: 28px;
+		letter-spacing: none;
+	}	
+	.achive {
+		font-size: 18px;
+	}
+	.achive::before {
+		width: 100%;
+		
+	}
+	.icon {
+		padding-left: 60px;
+	}	
+	.img1 {
+		height: 55px;
+		width: 55px;
+		margin-top: 25px;
+	}
+	.pp1 {
+		font-size: 15px;
+		padding-top: 15px;
+	}
+	.cc1{
+		font-size: 10px;
+	}
+	.icon2 {
+		padding-left: 180px;
+		
+	}	
+	
+	.service	{
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp2 {
+		font-size: 15px;
+		
+	}
+	.cc2 {
+		font-size: 10px;
+		
+	}
+	.icon3 {
+		padding-left: 180px;
+		
+	}	
+	
+	.service1 {
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp3 {
+		font-size: 15px;
+		
+	}
+	.cc3 {
+		font-size: 10px;
+		
+	}
+	.icon4 {
+		padding-left: 180px;
+		
+	}	
+	
+	.service2 {
+		height: 55px;
+		width: 55px;
+		margin-top: 50px;
+	}
+	.pp4 {
+		font-size: 10px;
+		
+	}
+	.cc4 {
+		font-size: 10px;
+		
+	}
+
+	.whats-app {	
+		left: 100px;
+	}
+	
+
+}					
+
